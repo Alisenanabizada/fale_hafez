@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فال حافظ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <script src="{{ url_for('static', filename='htmx.min.js')}}"></script>
+  </head>
+  <body dir="rtl">
+    <section class="page-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 shadow" id="content">
+
+          </div>
+          <div class="col-12">
+            <div class="col-2 mx-auto mt-4">
+              <button class="btn btn-primary btn-large" hx-get="/hx/fal" hx-target="#content">
+                نیت نموده اینجا کلیک کنید
+              </button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
