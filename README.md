@@ -9,6 +9,6 @@
 
 # TODO
 
-- [] add telegram bot.
+- [x] add telegram bot.
 - [] add linux version.
 - [] add mobile version.
