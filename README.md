@@ -8,7 +8,7 @@
 **مادر بزرگ** عزیزم که همیشه میخواست با کتاب براش فال بگیرم 
 
 # TODO
-- add linux version []
-- add telegram bot []
-- add android version []
-- add windows version []
+
+- [x] add telegram bot.
+- [] add linux version.
+- [] add mobile version.
