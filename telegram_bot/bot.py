@@ -23,7 +23,7 @@ def start(update: Update, context: CallbackContext) -> None:
 
 def fal(update: Update, context: CallbackContext) -> None:
     # Fetch a random fal from the Flask app
-    response = requests.get('http://localhost:9999/fal')
+    response = requests.get('https://omidazadi.pythonanywhere.com/fal')
     data = response.json()
     update.message.reply_text(f"{data['ghazal']}\n\n{data['fal']}")
 
@@ -33,7 +33,7 @@ def inline_fal(update: Update, context: CallbackContext) -> None:
         return
 
     # Fetch a random fal from the Flask app
-    response = requests.get('http://localhost:9999/fal')
+    response = requests.get('https://omidazadi.pythonanywhere.com/fal')
     data = response.json()
     ghazal = data['ghazal']
     fal = data['fal']
